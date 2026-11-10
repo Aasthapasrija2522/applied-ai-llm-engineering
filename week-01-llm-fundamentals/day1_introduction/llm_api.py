@@ -9,8 +9,7 @@ load_dotenv()
 
 # Step 2: Get API key and model name
 api_key = os.getenv("GEMINI_API_KEY")
-model = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
-
+model = "gemini-3.5-flash-lite"
 # Step 3: Check API key
 if not api_key:
     raise ValueError("Gemini API key not found!")
